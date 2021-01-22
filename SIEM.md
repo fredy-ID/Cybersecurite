@@ -6,7 +6,7 @@ ___Security Information and Evenment Managment__ (SIEM), est un terme combinant 
 
 ## Comment ça marche ?
 
-- 1) **Collecte de données** : A partir d'un serveur, d'un fichier
-- 2) **Extraction d'information importante** : Normalisation (parsing)
-- 3) **Ajouter une valeur** : Enrichissement du log (filtrage)
-- 4) **Présentation dans un rapport** : Présentation à partir d'une vue pour le traitement des données
+1) **Collecte de données** : A partir d'un serveur, d'un fichier
+2) **Extraction d'information importante** : Normalisation (parsing)
+3) **Ajouter une valeur** : Enrichissement du log (filtrage)
+4) **Présentation dans un rapport** : Présentation à partir d'une vue pour le traitement des données
