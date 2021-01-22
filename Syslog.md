@@ -10,9 +10,10 @@ Sur tous les types de périphériques, différents événements sont générés 
 
 ## Comment ça marche ?
 
-Un message syslog se compose de 3 parties : 
+### Un message syslog se compose de 3 parties : 
 
-1) le **PRI** : **__(le niveau de priorité calculé)__** Les données PRI envoyées via le protocole syslog sont le fruit de deux valeurs numérales qui permettent de classifier le message.
+#### 1) le **PRI** : **__(le niveau de priorité calculé)__** Les données PRI envoyées via le protocole syslog sont le fruit de deux valeurs numérales qui permettent de classifier le message.
+
 - **0 -- (kern)** : Messages du noyau
 - **1 -- (user)** : Messages de l’espace utilisateur
 - **2 -- (mail)** : Messages du système de messagerie
@@ -31,7 +32,7 @@ Un message syslog se compose de 3 parties :
 - **15 -- (solaris cron)** : Taches planifiées pour solaris (at/cron)
 - **16 - 23  -- (local0 ... local7)** : Utilisation locale 0 - 7
 
-2) le **HEADER** : **__(en-tête comportant les informations d’identification)__** La seconde partie d'un message syslog catégorise l'importance ou la gravité du message par un chiffre allant de 0 à 7
+#### 2) le **HEADER** : **__(en-tête comportant les informations d’identification)__** La seconde partie d'un message syslog catégorise l'importance ou la gravité du message par un chiffre allant de 0 à 7
 - **0 --	(Emergency)**	Système inutilisable.
 - **1 --	(Alert)**	Une intervention immédiate est nécessaire.
 - **2 --	(Critical)**	Erreur critique pour le système.
@@ -43,8 +44,8 @@ Un message syslog se compose de 3 parties :
 
 Les deux valeurs sont agrégées pour produire un indice de Priorité qui est envoyé conjointement au message. Cet indice se calcule en multipliant la catégorie par 8 et en y ajoutant le niveau de gravité. Plus le PRI est bas, plus la priorité est élevée.
 
-<code>Priorité = (catégorie x 8) + gravité<code>
+<code>Priorité = (catégorie x 8) + gravité</code>
 
 
 
-3) le **MSG** : (le message lui-même)
+#### 3) le **MSG** : (le message lui-même)
